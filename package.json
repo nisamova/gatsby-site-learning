@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gastby-site-learning-gatsby",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Highly customized site for Design Business",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
