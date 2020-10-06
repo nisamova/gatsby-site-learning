@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Card } from 'react-bootstrap'
+import { Container, Row, Col} from 'react-bootstrap'
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 

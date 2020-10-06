@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from 'react-bootstrap'
-import { FaFacebook, FaInstagramSquare, FaEnvelope} from 'react-icons/fa'
+import { FaFacebook, FaInstagramSquare} from 'react-icons/fa'
 
 
 
