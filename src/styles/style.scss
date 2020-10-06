@@ -1,0 +1,41 @@
+/**  
+ * Theme Colors : Primary : '#4e2140'
+ *                Secondary : '#ec8fd0'
+ *                Light Pink: '#f4d9e9'
+ *                Gray-Color: '#7b7d7e'
+ */
+ $primaryColor: #4e2140;
+ $secondaryColor: #ec8fd0;
+ $thirdPink:#f4d9e9;
+ $mainWhite: #fff;
+ $mainGray: #7b7d7e;
+
+ * {
+  box-sizing: border-box;
+}
+body {
+  color: $mainWhite;
+  font-size: 100%;
+  margin: 0;
+  line-height: 1.4283;
+  font-family: "Segoe UI", Roboto, Verdana, "Helvetica Neue", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  color: $primaryColor;
+}
+a {
+  color: $primaryColor;
+  text-decoration: underline overline dotted $secondaryColor;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:link {
+    color: $primaryColor;
+  }
+}
+p {
+    color: $mainGray;
+  }
