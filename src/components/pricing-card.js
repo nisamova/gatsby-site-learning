@@ -2,6 +2,8 @@ import React from 'react'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import {FaRegCheckSquare} from 'react-icons/fa'
+
 /**import { FaFacebook, FaInstagramSquare, FaEnvelope, FaPhoneSquareAlt} from 'react-icons/fa'*/
 
 
@@ -105,12 +107,21 @@ function Pricingcard() {
     <hr></hr>  
     <Card>
       <Card.Title>
-    <h1 class="d-flex justify-content-center" style={{'padding-top': '10px',}}> <Img fixed={data.imagebaloonlogopink.childImageSharp.fixed}
+    <h1 class="d-flex justify-content-center" style={{'padding-top':'10px'}}> <Img fixed={data.imagebaloonlogopink.childImageSharp.fixed}
       alt="Balloon Logo Brand" /> For Special Orders <Img fixed={data.imagebaloonlogopink.childImageSharp.fixed}
       alt="Balloon Logo Brand" /></h1>
       </Card.Title>
       <Card.Body>
-        <h4 class="d-flex justify-content-center">We design balloon arrangements for all occasion. </h4><h5 class="d-flex justify-content-center">Contact us for more details.</h5>
+        <h2 class="d-flex justify-content-center" style={{'font-size':'22px'}}>We create, style and install balloon decorations for ALL occasions</h2>
+
+        
+        <h3 class="d-flex justify-content-center" style={{'font-size':'18px'}}> <FaRegCheckSquare /> Birthdays </h3>
+        <h4 class="d-flex justify-content-center" style={{'font-size':'18px'}}><FaRegCheckSquare /> Baby Showers </h4>
+        <h5 class="d-flex justify-content-center" style={{'font-size':'18px'}}><FaRegCheckSquare /> Bridal Showers </h5>
+        <h6 class="d-flex justify-content-center" style={{'font-size':'18px'}}> <FaRegCheckSquare /> Corporate Events </h6>
+        <h6 class="d-flex justify-content-center" style={{'font-size':'18px'}}> <FaRegCheckSquare />Private Events</h6>
+
+        <p class="d-flex justify-content-center">Contact us for more details.</p>
       </Card.Body>
       </Card>
       <hr></hr>  

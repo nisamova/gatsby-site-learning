@@ -23,24 +23,32 @@ export default function Home({data}) {
       </Container>
         <Container>
         <section style={{'background-color':'#f3f2f2','padding-bottom':'4rem' }}>
-        <Row sm={1} md lg={3}>
+        <Row sm={1} md={2} lg={2}>
           <Col>
           <span class="d-flex justify-content-center" style={{color: '#4e2140','font-size':'24px','padding-bottom':'1rem','padding-top':'4rem'}}><FaRegCheckSquare /> </span>
-          <h5 class="d-flex justify-content-center" class="d-flex justify-content-center" style={{'padding-bottom':'1rem'}} > Custom design for any occasion</h5>
+          <h5 class="d-flex justify-content-center" class="d-flex justify-content-center" style={{'padding-bottom':'1rem'}} >Organic Balloon Garlands</h5>
           <hr style={{'width':'20%', 'border-width':'5px', 'background-color':'#f4d9e9'}}></hr>
 
           </Col>
+
           <Col>
           <span class="d-flex justify-content-center" style={{color: '#4e2140','font-size':'24px','padding-bottom':'1rem','padding-top':'4rem'}}><FaRegCheckSquare /> </span>
-          <h5 class="d-flex justify-content-center" class="d-flex justify-content-center" style={{'padding-bottom':'1rem'}} >Organic balloon option</h5>
+          <h5 class="d-flex justify-content-center" class="d-flex justify-content-center" style={{'padding-bottom':'1rem'}} >Balloon Walls</h5>
           <hr style={{'width':'20%', 'border-width':'5px', 'background-color':'#f4d9e9'}}></hr>
-
           </Col>
+
           <Col>
           <span class="d-flex justify-content-center" style={{color: '#4e2140','font-size':'24px','padding-bottom':'1rem', 'padding-top':'4rem'}}><FaRegCheckSquare /> </span>
-          <h5 class="d-flex justify-content-center" style={{'padding-bottom':'1rem'}}> Custom party props for rent</h5>
+          <h5 class="d-flex justify-content-center" style={{'padding-bottom':'1rem'}}> Balloon Bouquets</h5>
           <hr style={{'width':'20%', 'border-width':'5px', 'background-color':'#f4d9e9'}}></hr>
           </Col>
+
+          <Col>
+          <span class="d-flex justify-content-center" style={{color: '#4e2140','font-size':'24px','padding-bottom':'1rem', 'padding-top':'4rem'}}><FaRegCheckSquare /> </span>
+          <h5 class="d-flex justify-content-center" style={{'padding-bottom':'1rem'}}>Personalized balloons and more</h5>
+          <hr style={{'width':'20%', 'border-width':'5px', 'background-color':'#f4d9e9'}}></hr>
+          </Col>
+
         </Row>
         </section>
         <hr></hr>

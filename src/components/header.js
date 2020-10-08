@@ -31,9 +31,7 @@ const Header = () => {
       <Container style={{ 'background-color': '#f4d9e9'}}>
         <Row sm={1} md={2} lg={2}>
           <Col>
-      <figure >
         <Link to="/"><img src="Party-Ambiance-square-logo.jpg" width="150" height="150" alt="Party in Style" /></Link>
-      </figure>
       </Col>
       <Col>
         <ul style={{ display: `inline-block`, 'list-style-type': `none`, float: `right`, marginTop: `5rem`}}>
