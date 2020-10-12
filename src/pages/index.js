@@ -7,10 +7,12 @@ import "../styles/style.scss"
 import Portfoliocard from "../components/portfolio-card"
 import Pricingcard from "../components/pricing-card"
 import { FaRegCheckSquare } from "react-icons/fa"
+import SEO from "../components/seo"
 
 export default function Home({ data }) {
   return (
     <Layout>
+      <SEO title="Party Ambiance Omaha" />
       <Container>
         <Row>
           <Col>

@@ -1,7 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import SEO from "./seo"
-
 import "../styles/style.scss"
 import { Container, Row, Col } from "react-bootstrap"
 import {
@@ -14,7 +12,6 @@ import {
 const Header = () => {
   return (
     <header>
-      <SEO />
       <Container>
         <Row>
           <Col>
