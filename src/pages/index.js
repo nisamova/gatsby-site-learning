@@ -12,7 +12,7 @@ import SEO from "../components/seo"
 export default function Home({ data }) {
   return (
     <Layout>
-      <SEO title="Party Ambiance Omaha" />
+      <SEO title="Party Ambiance Omaha, Celebrate in Style" />
       <Container>
         <Row>
           <Col>
