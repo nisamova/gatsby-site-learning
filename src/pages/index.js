@@ -7,7 +7,7 @@ import "../styles/style.scss"
 import Portfoliocard from "../components/portfolio-card"
 import Pricingcard from "../components/pricing-card"
 import { FaRegCheckSquare } from "react-icons/fa"
-import SEO from "../components/seo"
+import SEO from "../components/seo-component"
 
 export default function Home({ data }) {
   return (
