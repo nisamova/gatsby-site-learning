@@ -1,15 +1,31 @@
 import React from "react"
 import { Link } from "gatsby"
 import "../styles/style.scss"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Navbar, Nav } from "react-bootstrap"
 import {
   FaFacebook,
   FaInstagramSquare,
   FaEnvelope,
   FaPhoneSquareAlt,
 } from "react-icons/fa"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 const Header = () => {
+  const data = useStaticQuery(graphql`
+    query imagesForLogo {
+      imagelogosquare: file(
+        relativePath: { eq: "Party-Ambiance-square-logo.jpg" }
+      ) {
+        id
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <header>
       <Container>
@@ -68,14 +84,100 @@ const Header = () => {
         </Row>
       </Container>
       <Container style={{ "background-color": "#f4d9e9" }}>
+        <Navbar expand="lg">
+          <Navbar.Brand>
+            {" "}
+            <img
+              src="Party-Ambiance-square-logo.jpg"
+              width="150"
+              height="150"
+              alt="Party in Style"
+            />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarResponsive" />
+          <Navbar.Collapse id="navbarResponsive">
+            <Nav as="ul" className="ml-auto">
+              <Nav.Item as="li">
+                <Link
+                  to="/"
+                  activeStyle={{ color: "#7b7d7e" }}
+                  style={{
+                    color: "#4e2140",
+                    fontSize: "20px",
+                    marginRight: `2rem`,
+                  }}
+                >
+                  Home
+                </Link>
+              </Nav.Item>
+
+              <Nav.Item as="li">
+                <Link
+                  to="/portfolio"
+                  activeStyle={{ color: "#7b7d7e" }}
+                  style={{
+                    color: "#4e2140",
+                    fontSize: "20px",
+                    marginRight: `2rem`,
+                  }}
+                >
+                  Portfolio
+                </Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Link
+                  to="/pricing"
+                  activeStyle={{ color: "#7b7d7e" }}
+                  style={{
+                    color: "#4e2140",
+                    fontSize: "20px",
+                    marginRight: `2rem`,
+                  }}
+                >
+                  Pricing
+                </Link>
+              </Nav.Item>
+              <Nav.Item as="li">
+                <Link
+                  to="/orderform"
+                  activeStyle={{ color: "#7b7d7e" }}
+                  style={{
+                    color: "#4e2140",
+                    fontSize: "20px",
+                    marginRight: `2rem`,
+                  }}
+                >
+                  Order Here
+                </Link>
+              </Nav.Item>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </Container>
+    </header>
+  )
+}
+
+export default Header
+
+/**
+ *      <Row>
+          <Col>
+          <Social />
+          </Col>
+        </Row>
+ */
+
+/**
+   * Old Header Styling:
+   * 
+   * <Container style={{ "background-color": "#f4d9e9" }}>
         <Row sm={1} md={2} lg={2}>
           <Col>
             <Link to="/">
-              <img
-                src="Party-Ambiance-square-logo.jpg"
-                width="150"
-                height="150"
-                alt="Party in Style"
+              <Img
+                fluid={data.imagelogosquare.childImageSharp.fluid}
+                alt="Party Ambiance Logo"
               />
             </Link>
           </Col>
@@ -119,16 +221,4 @@ const Header = () => {
           </Col>
         </Row>
       </Container>
-    </header>
-  )
-}
-
-export default Header
-
-/**
- *      <Row>
-          <Col>
-          <Social />
-          </Col>
-        </Row>
- */
+   */

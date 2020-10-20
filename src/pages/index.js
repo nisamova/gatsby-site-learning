@@ -28,7 +28,7 @@ export default function Home({ data }) {
         <section
           style={{ "background-color": "#f3f2f2", "padding-bottom": "4rem" }}
         >
-          <Row sm={1} md={2} lg={2}>
+          <Row xs={1} sm={1} md={2} lg={4}>
             <Col>
               <span
                 class="d-flex justify-content-center"
