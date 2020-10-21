@@ -39,7 +39,7 @@ export default function About({ data }) {
                 marginBottom: "20px",
               }}
             >
-              <li style={{ display: `inline`, marginRight: `2rem` }}>
+              <li style={{ display: `inline`, marginRight: `1rem` }}>
                 <Link
                   to="/"
                   activeStyle={{ color: "#7b7d7e" }}
@@ -48,7 +48,7 @@ export default function About({ data }) {
                   Home
                 </Link>
               </li>
-              <li style={{ display: `inline`, marginRight: `2rem` }}>
+              <li style={{ display: `inline`, marginRight: `1rem` }}>
                 <Link
                   to="/portfolio"
                   activeStyle={{ color: "#7b7d7e" }}
@@ -57,7 +57,7 @@ export default function About({ data }) {
                   Portfolio
                 </Link>
               </li>
-              <li style={{ display: `inline`, marginRight: `2rem` }}>
+              <li style={{ display: `inline`, marginRight: `1rem` }}>
                 <Link
                   to="/pricing"
                   activeStyle={{ color: "#7b7d7e" }}
@@ -66,7 +66,7 @@ export default function About({ data }) {
                   Pricing
                 </Link>
               </li>
-              <li style={{ display: `inline`, marginRight: `2rem` }}>
+              <li style={{ display: `inline`, marginRight: `1rem` }}>
                 <Link
                   to="/orderform"
                   activeStyle={{ color: "#7b7d7e" }}
