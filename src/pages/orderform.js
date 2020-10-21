@@ -68,7 +68,7 @@ function Orderform() {
               <Form.Row>
                 <Form.Group controlId="formBasicDeliverytime">
                   <Form.Label>
-                    When would like your balloons delivered ?
+                    When would you like your balloons delivered ?
                   </Form.Label>
                   <Form.Control
                     type="textarea"
@@ -93,7 +93,7 @@ function Orderform() {
                 <Form.Group controlId="formBasicEventtime">
                   <Form.Label>
                     Event start time (We will coordinate delivery time based on
-                    this)?
+                    this)
                   </Form.Label>
                   <Form.Control
                     type="textarea"
@@ -116,7 +116,7 @@ function Orderform() {
               <Form.Row>
                 <Form.Group controlId="AboutOcasionColor">
                   <Form.Label>
-                    Tells Us about your special event! Color, theme, occasion.
+                    Tell us about your special event! Color, theme, occasion.
                   </Form.Label>
                   <Form.Control
                     as="textarea"
