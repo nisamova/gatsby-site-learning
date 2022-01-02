@@ -92,7 +92,7 @@ function Pricingcard() {
         Balloon Bouquet
       </Card.Title>
       <Card.Text>
-        Starting at <span style={{'font-size':'20px', 'color':'#4e2140'}}>$75 </span>
+        Starting at <span style={{'font-size':'20px', 'color':'#4e2140'}}>$100 </span>
       </Card.Text>
     </Card.Body>
     </Card>
