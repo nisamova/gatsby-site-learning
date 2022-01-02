@@ -78,7 +78,7 @@ function Pricingcard() {
         Balloon Garland
       </Card.Title>
       <Card.Text>
-        Starting at <span style={{'font-size':'20px', 'color':'#4e2140'}}>$125 </span>
+        Starting at <span style={{'font-size':'20px', 'color':'#4e2140'}}>$160 </span>
       </Card.Text>
     </Card.Body>
     </Card>
