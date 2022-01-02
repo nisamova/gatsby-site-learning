@@ -95,7 +95,7 @@ export default function About({ data }) {
           </Col>
         </Row>
         <Row>
-          <Col md={{ span: 6, offset: 3 }}>Designed by Paisley Creative</Col>
+          <Col md={{ span: 6, offset: 3 }}><a href="elementswebdev.com">Designed by Elements Web Development</a></Col>
         </Row>
         <Row>
           <Col>
