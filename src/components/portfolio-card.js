@@ -2,7 +2,6 @@ import React from 'react'
 import { Container, Row, Col} from 'react-bootstrap'
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import Recentwork from './recent-work'
 
 
 
@@ -102,7 +101,6 @@ function Portfoliocard() {
   return (
     <section >
 <Container>
-  <Recentwork />
 <Row >
             <Col>
             <h1 class="d-flex justify-content-center" style={{'padding-top': '35px', }}> Portfolio</h1>
